@@ -17,10 +17,9 @@ function App() {
   //   )
   // }
 
-  const routesMap = !token ? [
+  const routesMap = token ? [
     {
       element: <AppLayout />,
-      // errorElement: <Page404 />,
       children: routes,
     },
   ] :

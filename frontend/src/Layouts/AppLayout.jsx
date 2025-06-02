@@ -1,12 +1,10 @@
 // import React, { useContext } from 'react';
 import { Outlet } from 'react-router';
-import { ConfigContext } from '../Context/ConfigContext';
 import ProtectedRoutes from '../Routes/ProtectedRoutes';
 import Header from './Header';
 import { navigationBar } from '../Constants/Constants';
 
 const AppLayout = () => {
-    // const {test} = useContext(ConfigContext);
     return (
         // <ProtectedRoutes>
             <section className=' h-[100dvh] overflow-hidden'>

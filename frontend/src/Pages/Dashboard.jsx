@@ -39,10 +39,10 @@ const Dashboard = () => {
                     <h1 className=' text-[#007daf]'>Sales Overview</h1>
                 </div>
             </header>
-            <div className=' mx-4'>
-                <div className="flex items-center overflow-x-auto mt-10 bg-white">
+            <div className="flex-center mt-10 bg-white">
+                <div className="flex-center w-full mx-4 bg-white">
                     <div className='flex-center'><FontAwesomeIcon icon={faChevronLeft} className="text-[#007daf] text-2xl"/></div>
-                    <div className=' grid grid-cols-6 gap-4 py-2 px-3 mx-4'>
+                    <div className=' w-full grid grid-cols-6 gap-4 py-2 px-3 mx-4'>
                         {sales1.map((val)=>{
                             return (
                                 <div className=' flex flex-col justify-between rounded overflow-hidden cardShadow'>
