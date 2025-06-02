@@ -1,0 +1,130 @@
+@import "tailwindcss";
+/* @import url(https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Jersey+10&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap); */
+
+@font-face {
+  font-family: 'Outfit Black';
+  src: url('/static/Outfit-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit Bold';
+  src: url('/static/Outfit-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Outfit Medium';
+  src: url('/frontend/public/static/Outfit-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+html, body {
+  font-family: 'Outfit Medium', sans-serif;
+  width: 100dvw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.outfit {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+  .flex-col-center {
+    @apply flex flex-col justify-center items-center;
+  }
+}
+
+@layer components {
+  .padding-x {
+    @apply px-5 md:px-10;
+  }
+
+  .padding-x-lg {
+    @apply px-5 md:px-20;
+  }
+
+  .section-padding {
+    @apply px-5 md:px-10 md:mt-40 mt-20;
+  }
+
+  .mt-responsive {
+    @apply xl:mt-20 md:mt-0 mt-40;
+  }
+
+  /* General Grids */
+  .grid-base {
+    @apply grid grid-cols-1;
+  }
+
+  .grid-2-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-6;
+  }
+
+  .grid-3-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+  }
+
+  .grid-3-cols-md-tight {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-0;
+  }
+
+  .grid-4-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+  }
+
+  .grid-12-cols {
+    @apply grid grid-cols-1 xl:grid-cols-12 gap-10;
+  }
+
+  .hero-layout {
+    @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+  }
+}
+
+.mainLayout{
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.navigationText{
+  transform: scale(1);
+  transform-origin: 0 0;
+  font-size: 2.09dvh;
+  font-weight: 500;
+}
+.cardTitle{
+  font-size: 0.78rem;
+    color: rgb(0, 125, 175);
+}
+.cardValue{
+  font-size: 0.78rem;
+    /* color: rgb(0, 125, 175); */
+}
+
+.navShadow{
+  /* height: 100% !important;
+  width: 100% !important; */
+  background: #FFFFFF;
+  box-shadow: 0.25px 0 2px #324b7d80;
+}
+
+.cardShadow{
+  box-shadow: 0 0 7px #0006;
+}
+
+.error{
+  font-weight: 600;
+  color: red;
+  font-size: 0.65rem;
+}
