@@ -3,14 +3,14 @@
 
 @font-face {
   font-family: 'Outfit Black';
-  src: url('/static/Outfit-Black.ttf') format('truetype');
+  src: url('/frontend/public/static/Outfit-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Outfit Bold';
-  src: url('/static/Outfit-Bold.ttf') format('truetype');
+  src: url('/frontend/public/static/Outfit-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
