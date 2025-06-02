@@ -28,6 +28,9 @@ html, body {
   scroll-behavior: smooth;
 }
 
+.bg-lightBlack{
+  background-color: rgba(0, 0, 0, 0.413);
+}
 
 .outfit {
   font-family: "Outfit", sans-serif;

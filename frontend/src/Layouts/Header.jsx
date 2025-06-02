@@ -12,10 +12,18 @@ const Header = () => {
     }
     return (
         <header>
-            <div className='w-[100dvw] h-[7.9dvh] navShadow pr-3 py-2.5 flex justify-end align-items-center gap-3'>
-                <span className=' navigationText text-cyan-700 flex-center'>Welcome - {user}</span>
-                <button onClick={handleLogout} className='cursor-pointer flex-center gap-1 text-center mr-2 px-2 pb-0.5 rounded bg-[#fa0096] text-sm text-white '>Logout <span className='ml-1'>
+            <div className='w-[100dvw] h-[7.9dvh] navShadow pr-3 py-2.5 flex justify-between align-items-center gap-3'>
+                <div className=' ml-6 flex-center gap-2'>
+                    <img className={`w-[19px]`} src="/Media/idms-logo.svg" alt="" />
+                    <div className={`navigationText fw-bolder text-nowrap text-pink-500`}>
+                        IDMS Infotech Pvt. Ltd.
+                    </div>
+                </div>
+                <div>
+                    <span className=' navigationText text-cyan-700 flex-center'>Welcome - {user}</span>
+                    <button onClick={handleLogout} className='cursor-pointer flex-center gap-1 text-center mr-2 px-2 pb-0.5 rounded bg-[#fa0096] text-sm text-white '>Logout <span className='ml-1'>
                     <FontAwesomeIcon icon={faPowerOff} className=' text-sm' /></span></button>
+                </div>
             </div>
         </header>
     );

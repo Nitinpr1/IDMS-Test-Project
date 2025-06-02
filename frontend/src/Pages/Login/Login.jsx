@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import axios from "axios";
 import { ConfigContext } from '../../Context/ConfigContext';
+import Loader from '../../Components/Loader';
 
 const Login = () => {
     const {apiUrl} = useContext(ConfigContext);
@@ -63,6 +64,7 @@ const Login = () => {
 
     return (
         <section className='flex-center h-[100dvh] w-full '>
+            {loading && (<Loader/>)}
             <div className='relative border border-pink-700 rounded md:w-[58.5%] w-full md:h-auto h-[70%] md:mx-0 mx-3 overflow-hidden'>
                 <img className='h-full w-full' src="/Media/hex-pattern.svg" alt="hex-pattern" />
                 <div className='absolute w-full h-full top-0 left-0'>
